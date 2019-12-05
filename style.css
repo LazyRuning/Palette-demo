@@ -1,0 +1,81 @@
+body{
+    margin:0;
+    overflow: hidden;
+}
+ol li{
+    list-style:none;
+}
+.icon {
+    width: 1.5em; height: 1.5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+#actions{
+  position: fixed;
+  top:10px;
+  left:40px;
+}
+#actions > svg{
+    margin:0 5px;
+    transition:all 0.3s;
+}
+#actions > svg.active{
+  fill:red;
+  transform:scale(1.2)
+}
+
+/* 画笔颜色 */
+.color{
+    position:fixed;
+    top:40px;
+    left:0px;
+    
+}
+.color > li{
+    width: 15px;
+    height: 15px;
+    border:1px solid gray;
+    border-radius:50%;
+    margin:5px 0;
+    position:all 0.3s;
+}
+.color > li.black{
+    background:black;
+}
+.color > li.red{
+    background:red;
+}
+.color > li.green{
+    background:green;
+}
+.color > li.yellow{
+    background:yellow;
+}
+.color > li.active{
+    transform:scale(1.2)
+}
+/* 画笔尺寸 */
+.size{
+    position:fixed;
+    top:40px;
+    right:10px;
+}
+.size > li{
+    margin:15px 0;
+    transition:all 0.3s
+}
+.size >li.active{
+    transform:scale(1.5)
+}
+.size > li.thin{
+    height: 0;
+    width: 20px;
+    border-top:3px solid black;
+  
+}
+.size > li.thick{
+    height: 0;
+    width: 20px;
+    border-top:5px solid black;
+}
